@@ -1,0 +1,388 @@
+/* <-------------- start adding  google fonts --------------------> */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Varela+Round&display=swap');
+
+/* <-------------- end adding  google fonts --------------------> */
+
+/* <-------------- start adding style to body --------------------> */
+body {
+  font-family: 'Hubballi', cursive;
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+
+
+}
+/* <-------------- end adding style to body --------------------> */
+
+
+/* <-------------- start adding style to box div --------------------> */
+.section {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.section ::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
+}
+
+/* <-------------- end adding style to box div --------------------> */
+
+
+/* <-------------- start adding style to section div 'before selector' --------------------> */
+div.section::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(#ffc107, #e91e63);
+  border-radius: 50%;
+  transform: translate(-250px, -120px);
+  animation-name: rotate;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+/* <-------------- end style section div 'before selector' --------------------> */
+
+
+/* <-------------- start adding style section div 'after selector' --------------------> */
+div.section::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(#2b2c7c, #31a53b);
+  border-radius: 50%;
+  transform: translate(250px, 120px);
+  animation-name: rotate1;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+/* <-------------- end adding style to section div 'after selector' --------------------> */
+
+
+/* <-------------- start adding animation style to section div 'before selector' --------------------> */
+@keyframes rotate {
+  from {
+    transform: translate(-450px, -250px);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+/* <-------------- end adding animation style to section div 'before selector' --------------------> */
+
+
+/* <-------------- start adding animation style to section div 'after selector' --------------------> */
+@keyframes rotate1 {
+  from {
+    transform: translate(250px, 120px);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+/* <-------------- end adding animation style to section div 'after selector' --------------------> */
+
+
+/* <-------------- start adding style to box --------------------> */
+.box {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(189, 49, 49, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 6px 6px 10px -1px rgba(221, 28, 28, 0.23),
+    -6px 6px 10px -9px rgba(5, 71, 10, 0.15),
+    6px -6px 10px -5px rgba(228, 220, 220, 0.15),
+    1px -6px 10px 8px rgba(56, 25, 170, 0.15),
+    inset -6px -6px 10px -9px rgba(13, 29, 14, 0.15);
+  border-radius: 10px;
+  z-index: 5;
+  width: 50%;
+  max-width: 528.806px;
+  min-width: 307.806px;
+  height: 538px;
+  margin-top: 3%;
+  overflow: hidden;
+
+}
+
+/* <-------------- end adding  style to box --------------------> */
+
+
+/* <-------------- start adding  style to header --------------------> */
+.header {
+  width: 644px;
+  height: 200px;
+  background-image: url('img/bg2.JPG');
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  border-radius: 9px 6px 0 0;
+  position: relative;
+
+}
+/* <-------------- end adding  style to header --------------------> */
+
+
+/* <-------------- start adding  style to date div  --------------------> */
+.date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #FFF;
+  font-size: 25px;
+
+}
+/* <-------------- end adding  style to date --------------------> */
+
+
+/* <-------------- start adding  style to header h1 --------------------> */
+h1 {
+  width: 10em;
+  color: white;
+  font-size: 25px;
+  margin-left: 25%;
+
+}
+
+h1 strong {
+  color: red;
+}
+/* <-------------- end adding  style to header h1 --------------------> */
+
+
+/* <-------------- start adding  style to  form --------------------> */
+
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/* <-------------- end adding  style to  form --------------------> */
+
+
+/* <-------------- start adding  style to  form -> input or button --------------------> */
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  background: rgb(206, 201, 201);
+  margin-left: 8px;
+  border-radius: 10px;
+}
+
+/* <-------------- end adding  style to  form -> input or button --------------------> */
+
+
+/* <-------------- start adding  style to  form -> button --------------------> */
+form button {
+  color: #6347ff;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #c01687;
+  color: white;
+}
+
+/* <-------------- end adding  style to  form -> button --------------------> */
+
+
+
+/* <-------------- styling start for todlist  --------------------> */
+
+/* <-------------- start adding  style to  todolist  --------------------> */
+.todo-list {
+  margin-bottom: 4rem;
+  
+}
+
+/* <-------------- start adding  style to  todolist -> li tag --------------------> */
+.todo-list li {
+ 
+  height: fit-content;
+  background-color: #ffff;
+  margin-bottom: 1rem;
+  padding: .2rem 1rem;
+  border-radius: 10px;
+  margin-left: 35px;
+  margin-right: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  word-break: break-all;
+  overflow: hidden;
+  
+}
+
+/* <--------------start adding  style to  todolist -> li tag -> div --------------------> */
+.todo-list li div {
+  display: flex;
+  align-items: center;
+  gap: .75;
+}
+
+/* <--------------end adding  style to  todolist -> li tag -> div --------------------> */
+
+
+/* <--------------start adding  style to  todolist -> li tag -> input  --------------------> */
+.todo-list li input {
+  background: none;
+
+}
+/* <-------------- end adding  style to  todolist -> li tag -> input  --------------------> */
+
+
+/* <-------------- start adding  style to  todolist -> li tag -> span  --------------------> */
+.todo-list li span {
+  color: rgb(12, 11, 11);
+  font-size: 1.5rem;
+  margin-left: 15px;
+  display: block;
+  margin-inline-end: 0em;
+  margin-inline-start: em;
+  
+
+}
+
+
+.todo-list li span[contenteditable]:hover {
+  background-color: #efe3b3;
+  border-radius: 5px;
+  
+
+}
+/* <-------------- end adding  style to  todolist -> li tag -> span  --------------------> */
+
+
+/* <-------------- start adding  style to  todolist -> li tag -> input for checkbox  --------------------> */
+input[type='checkbox'] {
+  appearance: none;
+  background-color: transparent;
+  margin: -4px;
+
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 2px solid rgb(14, 173, 213);
+  transition: 2s;
+  border-radius: 100%;
+}
+
+input[type='checkbox']:checked {
+
+  background-color: #961378;
+
+}
+
+input[type='checkbox']:checked::before {
+  transform: scale(1);
+
+}
+/* <-------------- end adding  style to  todolist -> li tag -> span  --------------------> */
+
+
+/* <-------------- start adding  style to  todolist -> checkbox for complete and incomplete  --------------------> */
+.todo-list li.complete span {
+  text-decoration: line-through;
+  color: rgb(201, 201, 227);
+
+}
+/* <-------------- end style to  todolist -> checkbox for complete and incomplete  --------------------> */
+
+
+/* <-------------- start adding  style to  todolist -> button  --------------------> */
+.todo-list  button {
+  border: 0;
+  padding: .5rem;
+  display: flex;
+  place-content: center;
+  border-radius: 8px;
+  background: #6ada1f;
+  margin-right: -15px;
+	justify-content: center;
+	align-items: center;
+
+  
+
+}
+
+.todo-list li span:focus {
+  background-color: #e08c88;
+  outline: none;
+
+}
+
+.todo-list li button:hover {
+  background-color: #be63a0;
+  cursor: pointer;
+
+}
+/* <-------------- end adding  style to  todolist -> button  --------------------> */
+
+
+/* <--------------  start adding  style to  todolist -> statistic (data) --------------------> */
+.stats {
+  display: flex;
+  padding: 8rem 20px;
+}
+
+.statics {
+  margin-left: 5px;
+
+  color: white;
+
+}
+
+/* <-------------- start adding  style to stats -> div  --------------------> */
+.statics div {
+  margin-left: 5px;
+  background-color: #f4e8f0;
+  border-radius: 7px;
+  color: rgb(31, 28, 28);
+  margin-top: 5px;
+  font-size: large;
+  font-weight: bolder;
+
+}
+/* <-------------- end adding  style to stats -> div  --------------------> */
+
+
+/* <--------------  start adding  style to stats -> div -> all span  --------------------> */
+#all-task,
+#completed-task,
+#left-task {
+  background-color: #e89b84;
+  border-radius: 4px;
+  font-size: large;
+  font-weight: bolder;
+
+}
+/* <--------------end adding  style to stats -> div -> all span  --------------------> */
+/* <-------------- end adding  style to  todolist -> statistic (data) --------------------> */
+
+/* <-------------- styling --------------------> */

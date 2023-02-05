@@ -1,0 +1,120 @@
+<!-- html start point -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  adding stylesheet to page -->
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/dynamic.css">
+  <!--  adding stylesheet to page -->
+
+  <!--  adding title -->
+  <title>Todo List</title>
+
+</head>
+
+<body>
+  <!-- creating section div (start)-->
+
+
+  <div class="section">
+
+    <!-- section start -->
+    <div class="box">
+
+      <!--  creating header (start) -->
+      <div class="header">
+
+        <!--  creating heading (start) -->
+        <h1> <strong>&#10084;</strong> Todo List <strong> &#10084;</strong></h1><!--  creating heading (end) -->
+
+
+        <!--  creating date div (start) -->
+        <div class="date"></div><!--  creating date div (end) -->
+
+      </div>
+      <!--  creating header (end) -->
+
+      <!--  creating container div (start) -->
+
+      <div class="container">
+
+        <!--  creating form (start) -->
+
+        <form id="todo-form">
+
+          <!--  creating form input tag (start) -->
+          <input type="text" name="task-name" class="todo-input" placeholder="Add your Task!!" autofocus />
+
+          <!--  creating form add button (start) -->
+          <button type="submit" id="btn">
+            +
+          </button>
+          <!--  creating form add button (end) -->
+
+          <!--  creating statics div for task data (start) -->
+          <div class="statics" id="main-content">
+
+            <!--  creating div (start) -->
+            <div>
+              <!--  creating statics data spans (start) -->
+              <span>All</span>
+              <span id="all-task">0</span>
+            </div>
+            <div>
+              <span>Completed</span>
+              <span id="completed-task">0</span>
+            </div>
+            <div>
+              <span>TaskLeft</span>
+              <span id="left-task">0</span>
+              <!--  creating statics data spans (end) -->
+            </div>
+            <!--  creating div (end) -->
+
+          </div>
+          <!--  creating statics div for task data (end) -->
+        </form>
+        <!--  creating form (end) -->
+      </div>
+
+      <!--  creating container div (end) -->
+
+      <!--  creating unorderd list (start) -->
+
+      <ul class="todo-list">
+        
+      </ul>
+      <!--  creating unorderd list (end) -->
+
+    </div>
+    <!--  box  (end) -->
+
+
+ <!--  creating footer (start) -->
+    <div class="footer">
+
+      <!--  creating footer msg div (start) -->
+      <div class="msg">
+        
+        <!--  creating footer msg  heading (start) -->
+        <h3> <strong> &#10084; </strong>Made By Sayra Bano <strong> &#10084;</strong></h3>
+        <!--  creating footer msg  heading (end) -->
+      </div>
+      <!--  creating footer msg div (start) -->
+
+    </div>
+
+    <!--  creating footer (end) -->
+  </div>
+   <!--  creating section (end) -->
+
+<!--  adding scriptfile to page -->
+  <script src="js/javascript.js"></script>
+</body>
+
+</html>
